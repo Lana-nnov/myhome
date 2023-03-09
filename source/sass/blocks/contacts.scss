@@ -1,0 +1,117 @@
+.contacts__wrap {
+    margin-bottom: 30px;
+}
+
+.contacts__title {
+    font-family: "Raleway-semibold";
+    margin-top: 0;
+    margin-bottom: 19px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.contacts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__item {
+    margin-bottom: 14px;
+}
+
+.contacts__link {    
+    display: flex;
+    align-items: center;
+    color: #333333;
+
+    svg {
+        margin-right: 12px;
+    }
+}
+
+.contacts__social-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacts__social-item {
+    margin-right: 25px;
+}
+
+@media (min-width: $tablet-width) {    
+    .contacts {
+        position: relative;
+    }
+
+    .contacts__wrap {
+        padding-top: 25px;
+        padding-left: 30px;
+        padding-bottom: 25px;
+        padding-right: 30px;
+        height: 320px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 40px;
+        left: 63px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 13px;
+    }
+
+    .contacts__link {
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    .contacts__link--address {
+        display: block;
+        max-width: 250px;
+    }
+
+    .contacts__social-list {
+        margin-top: auto;
+    }
+
+    .contacts__social-item {
+        margin-right: 18px;
+    }
+
+    .contacts__item {
+        margin-bottom: 15px;
+    }
+
+}    
+
+@media (min-width: $desktop-width) {   
+    
+    .contacts__wrap {  
+        position: absolute;
+        top: 52px;
+        left: 70px;
+        height: 342px;
+        padding-left: 38px;
+        background-color: #ffffff;
+    }
+
+    .contacts__title {
+        margin-bottom: 17px;
+    }    
+}    

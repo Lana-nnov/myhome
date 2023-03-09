@@ -1,0 +1,53 @@
+.custom-select__title {
+   position: relative;
+   padding-left: 20px;
+   padding-right: 27px;
+   padding-top: 10px;
+   padding-bottom: 11px;
+   font-family: "Inter-regular";
+   font-size: 14px;
+   line-height: 14px;
+   border: 1px solid rgba(51, 51, 51, 0.1);
+   border-radius: 25px;
+   background-color: #ffffff;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 14px;
+        right: 11px;
+        background-image: url("../img/icon-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.custom-select ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;    
+    text-align: center;
+}    
+
+.custom-select.select-opened ul {
+    display: block;
+}    
+
+@media (min-width: $tablet-width) {
+    .custom-select__title {
+        padding-right: 35px;
+        padding-top: 10px;
+        padding-bottom: 11px;
+
+        &::after {
+            right: 18px;
+        }
+    }    
+}    

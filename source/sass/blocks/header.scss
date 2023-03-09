@@ -1,0 +1,13 @@
+.header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.header--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: #ffffff;
+}    

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preload" href="./fonts/Raleway-Medium.woff" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Raleway-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">   
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Мой дом</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="visually-hidden">Управляющая компания Мой дом</h1>
+        <div class="menu menu--closed"> 
+          <nav class="menu__top main-nav">
+            <a class="main-nav__logo main-nav__logo--img-logo">
+              <img class="main-nav__image" src="img/logo.svg" width="158" height="34" alt="логотип компании Мой дом">
+            </a>        
+            <ul class="main-nav__list user-list">
+              <li>
+                <ul>
+                  <li class="user-list__item user-list__item--first">
+                    <a class="user-list__link" href="#">Оплатить квитанцию</a>
+                  </li>
+                  <li class="user-list__item user-list__item--first">
+                    <a class="user-list__link" href="#">Оставить заявку</a>
+                  </li>              
+                </ul>
+              </li>
+              <li class="user-list__item">
+                <ul>
+                  <li class="user-list__item user-list__item--second user-list__dropdown">
+                    <a class="user-list__link button button--transparent" href="#"><span>Диспетчерская</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5">
+                        <use href="img/sprite.svg#icon-select"></use>
+                      </svg>
+                    </a>                  
+                  </li>
+                  <li class="user-list__item user-list__item--second">
+                    <a class="user-list__link button button--light" href="#">Связаться с нами</a>
+                  </li>
+                </ul>
+              </li>          
+            </ul>
+            <div class="main-nav__pesonal user">   
+                <a class="user__link" href="#">              
+                  Личный кабинет
+                </a>          
+            </div>  
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <span class="main-nav__menu-toggle-bar"></span>
+            </button>
+          </nav>
+          <nav class="menu__bottom nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  О компании
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Новости
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Документация
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Дома
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Услуги и тарифы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Лицензии и сертификаты
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Реквизиты и контакты
+                </a>
+              </li>
+            </ul>
+            <ul class="user-list__bottom">             
+              <li class="user-list__item user-list__item--first">                 
+                <a class="user-list__link" href="#">Оплатить квитанцию</a>
+              </li>
+              <li class="user-list__item user-list__item--first">
+                    <a class="user-list__link" href="#">Оставить заявку</a>
+              </li>          
+              <li class="user-list__item user-list__item--second">
+                <a class="user-list__link button button--transparent" href="#">Диспетчерская
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5">
+                    <use href="img/sprite.svg#icon-select"></use>
+                  </svg>
+                </a>                  
+              </li>
+              <li class="user-list__item user-list__item--second">
+                  <a class="user-list__link button button--light" href="#">Связаться с нами</a>
+              </li>                           
+            </ul>
+          </nav>
+        </div>  
+      </div>  
+    </header>
+    <main class="main">      
+      <section class="notice container">
+        <div class="notice__slider slider">
+          <div class="notice__slide"> 
+          </div>            
+          <div class="notice__slide">  
+          </div>
+        </div>   
+      </section>
+
+
+      <section class="objects">
+        <h2 class="visually-hidden">Подбор жилого комплекса</h2>
+        <div class="objects__slider">
+          <div class="objects__slide">
+            <article class="objects__card object">
+              <h2 class="object__title">ЖК «Сосновый лес»</h2>  
+              <a class="object__link" href="#">Санкт-Петербург, ул. Лесная, д. 7</a>
+              <picture>
+                <source type="image/webp" media="(min-width: 1140px)" srcset="img/object-1-desktop.webp, img/object-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/object-1-tablet.webp, img/object-1-tablet@2x.webp 2x">                
+                <source type="image/webp" srcset="img/object-1.webp, img/object-1@2x.webp 2x">
+                <source media="(min-width: 1190px)" srcset="img/object-1-desktop.png, img/object-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/object-1-tablet.png, img/object-1-tablet@2x.png 2x">
+                <img class="object__image" src="img/object-1.png" alt="Жилой комплекс"> 
+              </picture>  
+              <a class="object__wrap-link" href="#">
+                <span class="visually-hidden">
+                  Перейти на страницу объекта
+                </span>
+              </a>                  
+            </article>
+          </div>
+          <div class="objects__slide">
+            <article class="objects__card object">
+              <h2 class="object__title">ЖК «Московский парк»</h2>  
+              <a class="object__link" href="#">Москва, пр. Вернадского, д. 55</a>
+              <picture>
+                <source type="image/webp" media="(min-width: 1140px)" srcset="img/object-2-desktop.webp, img/object-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/object-2-tablet.webp, img/object-2-tablet@2x.webp 2x">                
+                <source type="image/webp" srcset="img/object-2.webp, img/object-2@2x.webp 2x">
+                <source media="(min-width: 1190px)" srcset="img/object-2-desktop.png, img/object-2-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/object-2-tablet.png, img/object-2-tablet@2x.png 2x">
+                <img class="object__image" src="img/object-2.png" alt="Жилой комплекс"> 
+              </picture>     
+              <a class="object__wrap-link" href="#">
+                <span class="visually-hidden">
+                  Перейти на страницу объекта
+                </span>
+              </a>      
+            </article>
+          </div>
+          <div class="objects__slide">
+            <article class="objects__card object">
+              <h2 class="object__title">ЖК «Сосновый лес»</h2>  
+              <a class="object__link" href="#">Москва, пр. Вернадского, д. 55</a>
+              <picture>
+                <source type="image/webp" media="(min-width: 1140px)" srcset="img/object-3-desktop.webp, img/object-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/object-3-tablet.webp, img/object-3-tablet@2x.webp 2x">                
+                <source type="image/webp" srcset="img/object-3.webp, img/object-3@2x.webp 2x">
+                <source media="(min-width: 1190px)" srcset="img/object-3-desktop.png, img/object-3-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/object-3-tablet.png, img/object-3-tablet@2x.png 2x">
+                <img class="object__image" src="img/object-3.png" alt="Жилой комплекс"> 
+              </picture>  
+              <a class="object__wrap-link" href="#">
+                <span class="visually-hidden">
+                  Перейти на страницу объекта
+                </span>
+              </a>       
+            </article>
+          </div>
+          <div class="objects__slide">
+            <article class="objects__card object">
+              <h2 class="object__title">ЖК «Английский дом»</h2>  
+              <a class="object__link" href="#">Москва, пр. Мира, д. 24</a>
+              <picture>
+                <source type="image/webp" media="(min-width: 1140px)" srcset="img/object-4-desktop.webp, img/object-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/object-4-tablet.webp, img/object-4-tablet@2x.webp 2x">                
+                <source type="image/webp" srcset="img/object-4.webp, img/object-4@2x.webp 2x">
+                <source media="(min-width: 1190px)" srcset="img/object-4-desktop.png, img/object-4-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/object-4-tablet.png, img/object-4-tablet@2x.png 2x">
+                <img class="object__image" src="img/object-4.png" alt="Жилой комплекс"> 
+              </picture> 
+              <a class="object__wrap-link" href="#">
+                <span class="visually-hidden">
+                  Перейти на страницу объекта
+                </span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>  
+
+      <section class="services container">
+        <h2 class="services__title">Наши услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__wrap">
+              <div class="services__text-wrap services__wrap--main">
+                <h3 class="services__caption">Услуги по содержанию и ремонту</h3>
+                <a class="services__link" href="#">Посмотреть прайс-лист
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>  
+            </div>                      
+          </li>
+          <li class="services__item">
+            <div class="services__wrap services__wrap--utilities">
+              <div class="services__text-wrap">              
+                <h3 class="services__caption">Коммунальные услуги</h3>
+                <a class="services__link" href="#">Посмотреть прайс-лист
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div> 
+            </div>                      
+          </li>
+          <li class="services__item">
+            <div class="services__wrap services__wrap--repair">
+              <div class="services__text-wrap">              
+                <h3 class="services__caption">Капитальный ремонт</h3>
+                <a class="services__link" href="#">Посмотреть прайс-лист
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div> 
+            </div>                      
+          </li>
+          <li class="services__item">
+            <div class="services__wrap services__wrap--add">
+              <div class="services__text-wrap">              
+                <h3 class="services__caption">Дополнительные услуги</h3>
+                <a class="services__link" href="#">Посмотреть прайс-лист
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div> 
+            </div>                      
+          </li>
+        </ul>
+      </section>
+
+      <section class="news container">
+        <h2 class="news__title">Новости</h2>        
+        <div class="custom-select" id="news-select">
+          <button class="custom-select__title" type="button">2022</button>
+          <input type="hidden" name="year">
+          <ul>
+            <li data-value="2022">2022</li>  
+            <li data-value="2021">2021</li>
+            <li data-value="2020">2020</li>
+            <li data-value="2019">2019</li>        
+          </ul>
+        </div>
+        <div class="news__slider slider news">
+          <div class="news__slide">
+            <div>
+              <article class="news__card new">
+                <div class="new__image-wrap">   
+                  <picture>                                   
+                    <source type="image/webp" srcset="img/new-1.webp, img/new-1@2x.webp 2x">                    
+                    <img class="new__image" src="img/new-1.jpg" alt="Девушка с телефоном" width="367" height="200"> 
+                  </picture>                                  
+                </div>               
+                  
+                <time class="new__date" datetime="2022-10-20">20.10.2022</time>
+                <h2 class="new__title">Подключение жилых комплексов <br>к мобильному приложению Rubetek</h2>  
+                <a class="new__link" href="#">Читать полностью
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </a>                             
+              </article>
+            </div>            
+          </div>
+
+          <div class="news__slide">
+            <article class="news__card new">
+              <div class="new__image-wrap">
+                <picture>                                   
+                  <source type="image/webp" srcset="img/new-2.webp, img/new-2@2x.webp 2x">                    
+                  <img class="new__image" src="img/new-2.jpg" alt="Телефон" width="367" height="200"> 
+                </picture>
+              </div>
+              <time class="new__date" datetime="2022-10-15">15.10.2022</time>
+              <h2 class="new__title">СНУД</h2>  
+              <a class="new__link" href="#">Читать полностью
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>                             
+            </article>
+          </div>
+
+          <div class="news__slide">
+            <article class="news__card new">
+              <div class="new__image-wrap">
+                <picture>                                   
+                  <source type="image/webp" srcset="img/new-3.webp, img/new-3@2x.webp 2x">                    
+                  <img class="new__image" src="img/new-3.jpg" alt="Новоселье" width="367" height="200"> 
+                </picture>   
+              </div>
+                 
+              <time class="new__date" datetime="2022-10-01">01.10.2022</time>
+              <h2 class="new__title">Получение ключей</h2>  
+              <a class="new__link" href="#">Читать полностью
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>                         
+            </article>
+          </div>
+
+          <div class="news__slide">
+            <article class="news__card new">
+              <div class="new__image-wrap">
+                <picture>                                   
+                  <source type="image/webp" srcset="img/new-1.webp, img/new-1@2x.webp 2x">                    
+                  <img class="new__image" src="img/new-1.jpg" alt="Девушка с телефоном" width="367" height="200"> 
+                </picture>   
+              </div>             
+              
+              <time class="new__date" datetime="2022-10-20">20.10.2022</time>
+              <h2 class="new__title">Подключение жилых комплексов к мобильному приложению Rubetek</h2>  
+              <a class="new__link" href="#">Читать полностью
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10">
+                  <use href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>                         
+            </article>
+          </div>
+          
+        </div>       
+      </section>
+      <div class="wrapper-color">
+        <div class="answers container">
+          <h2 class="answers__title">Вопрос-ответ</h2>
+          <div class="answers__section">
+            <div class="answers__info">
+              <div class="answers__accordeon-container">
+                <h3 class="answers__block-title">Что включают в себя услуги по содержанию дома?</h3>
+                <button class="answers__btn" type="button" name="button">
+                  <span class="visually-hidden">Информация</span>
+                  <span class="answers__toggler-icon">
+                    <svg class="answers__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                      <use href="img/sprite.svg#icon-answer"></use>
+                    </svg>                    
+                  </span>
+                </button>
+              </div>  
+              <div class="answers__text">Услуги по содержанию дома включают в себя организацию выполнения утвержденного плана (перечня) работ и услуг по содержанию и ремонту общего имущества в многоквартирном доме, обеспечению безопасного и комфортного проживания в многоквартирном доме.</div>                 
+            </div>
+            <div class="answers__info">
+              <div class="answers__accordeon-container">
+                <h3 class="answers__block-title">Тарифы ЖКУ</h3>
+                <button class="answers__btn" type="button" name="button">
+                  <span class="visually-hidden">Информация</span>
+                  <span class="answers__toggler-icon">
+                    <svg class="answers__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                      <use href="img/sprite.svg#icon-answer"></use>
+                    </svg>                    
+                  </span>
+                </button>
+              </div> 
+              <div class="answers__text">Здесь будет информация о тарифах</div>             
+            </div>
+            <div class="answers__info">
+              <div class="answers__accordeon-container">
+                <h3 class="answers__block-title">Полезные телефоны</h3>
+                <button class="answers__btn" type="button" name="button">
+                  <span class="visually-hidden">Информация</span>
+                  <span class="answers__toggler-icon">
+                    <svg class="answers__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                      <use href="img/sprite.svg#icon-answer"></use>
+                    </svg>                    
+                  </span>
+                </button>
+              </div> 
+              <div class="answers__text">Здесь будет список полезных телефонов</div>             
+            </div>     
+            <div class="answers__info">
+              <div class="answers__accordeon-container">
+                <h3 class="answers__block-title">Что включают в себя услуги по содержанию дома?</h3>
+                <button class="answers__btn" type="button" name="button">
+                  <span class="visually-hidden">Информация</span>
+                  <span class="answers__toggler-icon">
+                    <svg class="answers__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                      <use href="img/sprite.svg#icon-answer"></use>
+                    </svg>                    
+                  </span>                  
+                </button>
+              </div> 
+              <div class="answers__text">Здесь будет информация об услугах по содержаниюдома</div>             
+            </div>   
+            <div class="answers__info">
+              <div class="answers__accordeon-container">
+                <h3 class="answers__block-title">Тарифы ЖКУ</h3>
+                <button class="answers__btn" type="button" name="button">
+                  <span class="visually-hidden">Информация</span>
+                  <span class="answers__toggler-icon">
+                    <svg class="answers__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                      <use href="img/sprite.svg#icon-answer"></use>
+                    </svg>                    
+                  </span>                  
+                </button>
+              </div> 
+              <div class="answers__text">Здесь будет таблица с тарифами ЖКУ</div>             
+            </div>        
+          </div>
+        </div>  
+        <section class="contacts container">
+          <div class="contacts__wrap">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--tel" href="tel:+7(931)251-24-86">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.9" height="16.9">
+                    <use href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span>+7 (931) 251-24-86</span>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--email" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <use href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                  <span>unperspektiva@yandex.ru</span>
+                </a>
+              </li>
+              <li class="contacts__item">              
+                <a class="contacts__link contacts__link--address" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                    <use href="img/sprite.svg#icon-map"></use>
+                  </svg>
+                  <span>г. Кудрово, Проспект Строителей, д. 16</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="contacts__social-list">
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="">VK</a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="">Telegram</a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="">Whatsapp</a>
+              </li>
+            </ul>            
+          </div>
+          
+          <div id="map" class="map"></div>
+        </section>       
+
+      </div>
+    </main> 
+    <footer class="footer">
+      <div class="container">              
+        <div class="footer__wrap">
+          <a class="footer__link-logo" href="#">
+            <img class="footer__logo" src="img/logo-white.svg" width="159" height="34" alt="логотип компании Мой дом">
+          </a> 
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги и тарифы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Лицензии и сертификаты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Документация</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реквизиты и контакты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Дома</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <ul class="footer__contacts-list">
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+7(931)251-24-86">  
+                <span>Телефон</span>                
+                +7 (931) 251-24-86
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href=""> 
+                <span>Электронная почта</span>                
+                unperspektiva@yandex.ru
+              </a>
+            </li>
+            <li class="footer__item">              
+              <a class="footer__link" href="">   
+                <span>Адрес</span>               
+                г. Кудрово, Проспект Строителей, д. 16
+              </a>
+            </li>
+          </ul>         
+        </div>
+        <div class="footer__wrap-add">
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">Мы вконтакте</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="15.27">
+                  <use href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">Мы в телеграм</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="15.27">
+                  <use href="img/sprite.svg#icon-tel"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <span class="visually-hidden">Мы в whatsapp</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.12" height="20.12">
+                  <use href="img/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__personal-link button" href="#">Личный кабинет</a>
+        </div>        
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-wrap container">
+          <p class="footer__copyright-text">ООО «Мой дом» © Все права защищены</p>
+          <p class="footer__copyright-text">Создание сайта — <a target="_blank" href="https://red-promo.ru/">Red Promо</a></p>
+        </div>        
+      </div>
+    </footer>  
+    <script src="js/vendor/jquery-3.4.1.slim.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=241042a5-9d49-48a7-a272-dbaedcc1ff11&lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

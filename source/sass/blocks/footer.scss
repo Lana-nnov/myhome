@@ -1,0 +1,263 @@
+.footer {
+    position: relative;    
+    z-index: 1;
+    padding-top: 90px;
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: -50px;
+}
+
+.footer__link-logo {
+    display: block;
+    margin-bottom: 43px;
+}
+
+.footer__nav {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.footer__item {
+    margin-bottom: 12px;
+}
+
+.footer__nav .footer__item:nth-child(2n+1) {
+    width: 38%;
+}
+
+.footer__nav .footer__item:nth-child(2n) {
+    width: 62%;
+}
+
+.footer__link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    
+    span {
+        display: block;
+        opacity: 0.6;
+    }
+}
+
+.footer__personal-link.button {
+    position: relative;
+    padding: 12px 29px 11px 45px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translate(0,-50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15.23px;
+        height: 18px;
+        background-image: url("../img/icon-user.svg");
+    }
+}
+
+.footer__copyright-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.footer__social {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 41px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer__social-item {
+    margin-right: 20px;
+}
+
+.footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    svg {
+        fill: #5BC3E3;
+    }
+
+    &:hover {        
+        background-color: #5BC3E3;
+
+        &:hover {
+            svg {
+              fill: #ffffff;
+            }
+          }
+    }
+}
+
+.footer__contacts-list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 0;
+
+    li {
+        margin-bottom: 17px;
+    }
+}
+
+.footer__personal-link {
+    display: inline-block;
+}
+
+.footer__wrap-add {
+    padding-bottom: 40px;
+}
+
+.footer__copyright {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer__copyright-text {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    color:rgba(255, 255, 255, 0.9);
+
+    a {
+        color: #ffffff;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .footer {
+        padding-top: 111px;
+    }
+
+    .footer__logo {
+        width: 184.36px;
+        height: auto;
+    }
+
+    .footer__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .footer__link-logo {
+        width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .footer__nav {
+        width: 50%;
+        flex-grow: 1;
+    }
+
+    .footer__item {
+        margin-bottom: 15px;
+    }
+
+    .footer__contacts-list li {
+        margin-bottom: 23px;
+    }
+
+    .footer__contacts-list {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .footer__wrap-add {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .footer__social {
+        min-width: 222px;
+        margin-bottom: 0;
+    }
+
+    .footer__copyright-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*.footer__nav .footer__item:nth-child(2n+1) {
+        width: 41%;
+    }
+
+    .footer__nav .footer__item:nth-child(2n) {
+        width: 59%;
+    }*/
+
+    .footer__link {
+        display: block;
+        max-width: 225px;
+    }
+}    
+
+@media (min-width: $desktop-width) {
+    .footer {
+        padding-top: 105px;
+    }
+
+    .footer__link {
+        max-width: none;
+    }
+
+    .footer__link-logo {
+        width: 314px;
+    }
+
+    .footer__nav {
+        padding-top: 8px;
+        width: 400px;
+        flex-grow: 1;
+    }
+
+    .footer__contacts-list {
+        padding-top: 8px;
+        padding-right: 10px;
+    }
+
+    .footer__contacts-list li {
+        margin-bottom: 20px;
+    }
+
+    .footer__item {
+        margin-bottom: 17px;
+    }
+
+    .footer__wrap-add {
+        padding-top: 5px;
+    }
+
+    .footer__social {
+        min-width: 272px;
+    }
+}    

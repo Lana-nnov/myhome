@@ -1,0 +1,57 @@
+.slider .slick-next {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-arrow-right.svg");
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    &::before {
+        content: "";
+    }
+
+}
+
+.slider .slick-prev {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-arrow-left.svg");
+    background-color: #ffffff;
+    border-radius: 50%;
+    
+    &::before {
+        content: "";
+    }
+}
+.slider .slick-prev:hover,.slider .slick-prev:focus {
+    background-image: url("../img/icon-arrow-left-active.svg");
+}   
+
+.slider .slick-next:hover,.slider .slick-next:focus {
+    background-image: url("../img/icon-arrow-right-active.svg");
+}    
+
+.slider .slick-dots li {
+    height: 7px;
+    width: 7px;
+}
+
+.slider .slick-dots li button {
+    height: 7px;
+    width: 7px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    &::before {
+        height: 7px;
+        width: 7px;
+    }
+}
+
+.slider .slick-dots .slick-active button {
+    background-color: #ffffff;
+}

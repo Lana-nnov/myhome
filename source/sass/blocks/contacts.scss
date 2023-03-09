@@ -32,6 +32,10 @@
     align-items: center;
     color: #333333;
 
+    &:hover {
+        color: #5BC3E3;
+    }
+
     svg {
         margin-right: 12px;
     }
@@ -45,6 +49,14 @@
 
 .contacts__social-item {
     margin-right: 25px;
+}
+
+.contacts__social-link {
+    color: inherit;
+
+    &:hover {
+        color: #5BC3E3;
+    }
 }
 
 @media (min-width: $tablet-width) {    

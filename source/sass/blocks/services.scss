@@ -82,10 +82,18 @@
     font-family: "Raleway-bold";
     font-size: 14px;
     line-height: 14px;
-    color: #5BC3E3;
+    color: #5BC3E3;    
 
     svg {
         margin-left: 7px;
+    }
+
+    &:hover {
+        svg {
+            margin-left: 10px;
+            width: 15px;
+            height: auto;
+        }
     }
 }
 
